@@ -1,0 +1,25 @@
+.pokedex-navbar {
+    margin-bottom: 30px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--shadow);
+}
+
+.pokedex-navbar .MuiAppBar-root {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--accent-color) 100%);
+    color: white;
+    box-shadow: none;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.image-container img {
+    max-height: 60px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}

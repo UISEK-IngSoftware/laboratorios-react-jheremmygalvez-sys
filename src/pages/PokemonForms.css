@@ -1,0 +1,44 @@
+.picture {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100px;
+    border-radius: var(--border-radius);
+    border: 2px dashed var(--secondary-color);
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.picture:hover {
+    border-color: var(--primary-color);
+}
+
+.MuiTypography-h4 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.MuiTextField-root {
+    margin-bottom: 16px;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root {
+    border-radius: var(--border-radius);
+}
+
+.MuiButton-contained {
+    background: linear-gradient(45deg, var(--primary-color), #ff8e8e);
+    color: white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    font-weight: 600;
+    text-transform: none;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.MuiButton-contained:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}

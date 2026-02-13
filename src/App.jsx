@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import { Container, Grid } from '@mui/material'
+import Login from './pages/Login'
+import PokemonList from './pages/PokemonList'
 import './App.css'
+import PokemonForm from './pages/PokemonForms'
+import PokemonDetail from './pages/PokemonDetail'
+import TrainerList from './components/TrainerList'
+import TrainerForm from './pages/TrainerForm'
+import TrainerDetail from './pages/TrainerDetail'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Container>
+        <BrowserRouter>
+          <Header />
+          {/* Rutas y componentes irían aquí */}
+          <Routes>
+            <Route path="/" element={<PokemonList />} />
+            <Route path="/pokemons/:id" element={<PokemonDetail />} />
+            <Route path="/add-pokemon" element={<PokemonForm />} />
+            <Route path="/edit-pokemon/:id" element={<PokemonForm />} />
+            <Route path="/trainers" element={<TrainerList />} />
+            <Route path="/trainers/:id" element={<TrainerDetail />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/add-trainer" element={<TrainerForm />} />
+            <Route path="/edit-trainer/:id" element={<TrainerForm />} />
+          </Routes>
+        </BrowserRouter>
+      </Container>
     </>
   )
 }
-
 export default App

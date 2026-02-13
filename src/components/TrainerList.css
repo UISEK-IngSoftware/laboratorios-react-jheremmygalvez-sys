@@ -1,0 +1,35 @@
+.Carta {
+    border: solid 3px #B71C1C;
+    padding: 5px;
+    background-color: white;
+}
+
+.titulo {
+    color: #B71C1C;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.cuerpo {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.modelo-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Boton {
+    border: solid 3px #B71C1C !important;
+    background-color: #D32F2F !important;
+    color: white !important;
+    font-weight: bold !important;
+    border-width: 75% !important;
+    padding: 10px !important;
+    text-align: center !important;
+}

@@ -1,0 +1,57 @@
+.MuiCard-root {
+  border-radius: var(--border-radius) !important;
+  box-shadow: 0 8px 25px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: var(--card-background);
+  overflow: hidden;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.MuiCardContent-root {
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo {
+  color: var(--primary-color) !important;
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 10px !important;
+}
+
+.modelo-b {
+  padding: 16px !important;
+  justify-content: space-around !important;
+}
+
+.MuiButton-root {
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.MuiButton-containedPrimary {
+  background: linear-gradient(45deg, var(--primary-color), #ef5350) !important;
+  color: white !important;
+}
+
+.MuiButton-containedPrimary:hover {
+  background: linear-gradient(45deg, #d32f2f, var(--primary-color)) !important;
+}
+
+.MuiButton-containedError {
+  background: linear-gradient(45deg, #f44336, #e57373) !important;
+}
+
+.MuiButton-containedError:hover {
+  background: linear-gradient(45deg, #d32f2f, #f44336) !important;
+}
